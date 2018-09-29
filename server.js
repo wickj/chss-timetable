@@ -2,6 +2,7 @@ const fs = require('fs');
 var express = require('express');
 var app = express();
 
+const port = process.env.PORT;
 var content;
 var parsedContent;
 fs.readFile('./data.json', function read(err, data) {
@@ -25,6 +26,6 @@ app.get('/json', function(req, res) {
   res.send(JSON.stringify(parsedContent));
 });
 
-app.listen(3000, function() {
-  console.log('Server listening on port 3000.');
+app.listen(port, function() {
+  console.log('Server listening on port ' + port);
 });
