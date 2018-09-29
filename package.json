@@ -1,0 +1,14 @@
+{
+  "name": "chss-timetable",
+  "version": "0.1.0",
+  "description": "Server side of the chss timetable desktop app.  Returns a JSON object with the time offset to use.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Wick",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
