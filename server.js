@@ -13,11 +13,6 @@ fs.readFile('./data.json', function read(err, data) {
   console.log('Data to be sent: \n' + JSON.stringify(parsedContent));
 });
 
-app.use(function (req, res, next) {
-    res.header('Content-Type', 'application/json');
-    next();
-});
-
 app.get('/', function(req, res) {
   res.send('Hello World!');
 });
